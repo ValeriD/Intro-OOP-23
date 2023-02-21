@@ -60,5 +60,19 @@ int main()
 
     Parking p3(10, 5);
     cout << "There should be 5 spots, and there are: " << p2.getTotalFreeSpots() << endl;
+
+    p1.freeSpot();
+    cout << "There should be 0 spots, and there are: " << p1.getTotalFreeSpots() << endl;
+
+    p1.getSpot();
+    cout << "There should be 0 spots, and there are: " << p1.getTotalFreeSpots() << endl;
+
+    p2.getSpot()
+    cout << "There should be 9 spots, and there are: " << p2.getTotalFreeSpots() << endl;
+
+    p3.freeSpot()
+    cout << "There should be 6 spots, and there are: " << p2.getTotalFreeSpots() << endl;
+
+
     */
 }
