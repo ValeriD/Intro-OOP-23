@@ -11,11 +11,21 @@ struct vector_t
 
 struct vector_t *init()
 {
-    struct vector_t *vector = new vector_t[1];
+    struct vector_t *vector = new vector_t;
     vector->capacity = 2;
     vector->data = new int[vector->capacity];
     vector->size = 0;
     return vector;
+}
+
+void deleteVector(vector_t *vector)
+{
+    // for (size_t i = 0; i < vector->capacity; i++)
+    // {
+    //     delete vector->data[i];
+    // }
+    delete[] vector->data;
+    delete vector;
 }
 
 void resize(vector_t *vector)
