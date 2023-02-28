@@ -71,7 +71,7 @@ int main()
     cout << "There should be 9 spots, and there are: " << p2.getTotalFreeSpots() << endl;
 
     p3.freeSpot()
-    cout << "There should be 6 spots, and there are: " << p2.getTotalFreeSpots() << endl;
+    cout << "There should be 6 spots, and there are: " << p3.getTotalFreeSpots() << endl;
 
 
     */
