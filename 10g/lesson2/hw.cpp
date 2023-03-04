@@ -31,7 +31,7 @@ public:
     Theatre(int totalTickets, int soldTickets);
 
     /**
-     * @brief Get the total free tickets in the parking lot
+     * @brief Get the total free tickets
      *
      */
     int getTotalAvailableTickets() const;
@@ -39,14 +39,14 @@ public:
 
 int main()
 {
-    /* TODO remove this comment to test the functionalities
-    Parking p1;
+    /*// TODO remove this comment to test the functionalities
+    Theatre p1;
     cout << "There should be 0 tickets, and there are: " << p1.getTotalAvailableTickets() << endl;
 
-    Parking p2(10);
+    Theatre p2(10);
     cout << "There should be 10 tickets, and there are: " << p2.getTotalAvailableTickets() << endl;
 
-    Parking p3(10, 5);
+    Theatre p3(10, 5);
     cout << "There should be 5 tickets, and there are: " << p2.getTotalAvailableTickets() << endl;
     */
 }
