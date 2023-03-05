@@ -39,5 +39,5 @@ int main()
     String string("Test message 2");
 
     string = myString;
-    cout << "Expected: Test message 2, got: " << string.getCString() << endl;
+    cout << "Expected: Test message, got: " << string.getCString() << endl;
 }
