@@ -21,7 +21,7 @@ public:
         return this->data;
     }
 
-    size_t length() const
+    size_t strlength() const
     {
         return this->length;
     }
