@@ -107,7 +107,7 @@ public:
 
 int Marker::markersCount = 0;
 
-class CarCrash : Marker
+class CarCrash : public Marker
 {
     char *cityName;
 
@@ -139,7 +139,7 @@ int main()
 
         CarCrash cc(p, "test1", "google");
         cc.printCoordinates();
-
+        cout << cc.getName() << endl;
         cout << m.getMarkersCount() << endl;
         cout << "End of the program!" << endl;
     }
