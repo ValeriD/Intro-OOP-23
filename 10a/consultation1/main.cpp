@@ -121,7 +121,7 @@ public:
     ~CarCrash()
     {
         delete[] cityName;
-        Marker::~Marker();
+        // Marker::~Marker(); - called automatically
     }
     void printCoordinates() const
     {
@@ -140,7 +140,7 @@ int main()
         CarCrash cc(p, "test1", "google");
         cc.printCoordinates();
 
-        cout << Marker::getMarkersCount() << endl;
+        cout << m.getMarkersCount() << endl;
         cout << "End of the program!" << endl;
     }
     catch (exception &e)
