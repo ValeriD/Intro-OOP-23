@@ -138,21 +138,21 @@ class FileManager
 {
 
 public:
-    static Point2D read(File &f)
+    static Point2D readPoint2D(File &f)
     {
         Point2D p;
         f.getFileStream().seekg(ios::beg);
         f.getFileStream() >> p;
         return p;
     }
-    static Point3D read(File &f)
+    static Point3D readPoint3D(File &f)
     {
         Point3D p;
         f.getFileStream().seekg(ios::beg);
         f.getFileStream() >> p;
         return p;
     }
-    static vector<Point2D> read(File &f)
+    static vector<Point2D> readTriangle(File &f)
     {
         vector<Point2D> triangle;
         string line;
@@ -174,7 +174,7 @@ public:
 int main()
 {
     File f1("tmp.txt", ios::in | ios::out | ios::app);
-    Point2D p = FileManager::read(f1);
+    Point2D p = FileManager::readPoint2D(f1);
     cout << p << endl;
     return 0;
 }
