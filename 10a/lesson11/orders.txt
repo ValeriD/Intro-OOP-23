@@ -1,0 +1,6 @@
+Kitchen	
+12
+15\n
+Cola 2.5 
+Fanta 2.5
+Salad 8
